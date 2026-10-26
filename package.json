@@ -1,0 +1,15 @@
+{
+  "name": "endfield-ppt-portable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Editable Endfield-inspired PPT skill and local JSON renderer for tool-enabled agent harnesses",
+  "type": "module",
+  "engines": {"node": ">=20"},
+  "license": "CC-BY-NC-4.0",
+  "scripts": {
+    "demo": "node scripts/generate.mjs --plan examples/overview.json --out output/demo.pptx",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {"pptxgenjs": "4.0.1"},
+  "devDependencies": {"jszip": "3.10.1"}
+}
